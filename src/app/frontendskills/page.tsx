@@ -2,12 +2,12 @@ import React from 'react'
 
 type Props = {}
 
-const ContactPage = (props: Props) => {
+const FrontendPage = (props: Props) => {
   return (
     <section className='text-white flex justify-center items-center h-screen w-screen'>
-      Contact Page
+      Frontend Page
     </section>
   )
 }
 
-export default ContactPage
+export default FrontendPage

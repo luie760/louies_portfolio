@@ -4,7 +4,9 @@ type Props = {}
 
 const PortfolioPage = (props: Props) => {
   return (
-    <div>PortfolioPage</div>
+    <section className='text-white flex justify-center items-center h-screen w-screen'>
+      Portfolio Page
+    </section>
   )
 }
 

@@ -34,10 +34,10 @@ const Navbar = (props: Props) => {
                             {/* LINKS */}
                             <div className={`${flexBetween} gap-8 text-sm text-white`}>
                                 <Link href="/">Home</Link>
-                                <Link href="/#frontendskills">Front-end skills</Link>
-                                <Link href="/#backendskills">Back-end skills</Link>
-                                <Link href="/#portfolio">Portfolio</Link>
-                                <Link href="/#contact">Contact</Link>
+                                <Link href="/frontendskills">Front-end skills</Link>
+                                <Link href="/backendskills">Back-end skills</Link>
+                                <Link href="/portfolio">Portfolio</Link>
+                                <Link href="/contact">Contact</Link>
                             </div>
                         </div>
                     ):(

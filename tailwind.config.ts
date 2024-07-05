@@ -14,6 +14,15 @@ const config: Config = {
         md: '1.5rem',
         lg: '2rem'
       }
+    },
+    extend:{
+      colors: {
+        "main-bg-black":"#222222",
+        "section-bg-black":"252525",
+      },
+      content: {
+        logo: "url('../../public/Logo.png')",
+      },
     }
   },
   plugins: [],

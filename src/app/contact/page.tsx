@@ -1,12 +1,13 @@
+'use client';
+
 import React from 'react'
+import ShiftingContactForm from './ShiftingContactForm'
 
 type Props = {}
 
 const ContactPage = (props: Props) => {
   return (
-    <section className='text-white flex justify-center items-center h-screen w-screen'>
-      Contact Page
-    </section>
+    <ShiftingContactForm />
   )
 }
 

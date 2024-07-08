@@ -18,7 +18,7 @@ const config: Config = {
     extend:{
       colors: {
         "main-bg-black":"#222222",
-        "section-bg-black":"252525",
+        "section-bg-black":"#252525",
       },
       content: {
         logo: "url('../../public/Logo.png')",

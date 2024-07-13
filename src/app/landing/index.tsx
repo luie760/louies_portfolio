@@ -12,12 +12,13 @@ const Landing = (props: Props) => {
           <Image className="float-left" src={EllipseImg} alt="Ellipse" />
           <div className="float-left w-1/3">
             <div className="text-sm text-white my-5">Software Engineer - Full Stack Developer</div>
-            <div className="text-6xl text-white my-5">Hi, I'm Louie</div>
-            <div className="text-sm text-white my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-             cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <div className="text-6xl text-white my-5">Hi, I'm Louie. I build things!</div>
+            <div className="text-sm text-white my-5">I'm a seasoned software engineer with a robust background 
+              in full-stack development and DevOps engineering. Over the past 10 years, I've accumulated extensive 
+              experience across a wide array of technologies and industries
+            </div>
+            <div className="text-sm text-white my-5">Stay for a bit! Feel free to explore some of my portfolio 
+              projects and contact me to see how my skills and expertise can contribute to your next project or team
             </div>
             <div className='flex gap-3'>
               <GradientShadowButton btnText='Portfolio' route='/portfolio' />

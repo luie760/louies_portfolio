@@ -131,28 +131,28 @@ type FeatureType = {
 const features: FeatureType[] = [
   {
     id: 1,
-    callout: "API, Supabase, NextJs",
-    title: "API Resume",
+    callout: "Supabase, PostgreSQL, Next.js, TypeScript",
+    title: "Resume API",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto quaerat qui, illo incidunt suscipit fugiat distinctio officia earum eius quae officiis quis harum animi.",
+      "Experience my portfolio in a unique way through a custom-built Resume API. Leveraging Supabase, PostgreSQL, and Next.js, I've transformed static resume content into a dynamic API endpoint. Now, accessing detailed information about my skills, projects, and experience is as simple as sending a GET request. Explore and interact with my professional journey effortlessly, whether you're browsing through a browser or testing endpoints with tools like Postman. This project not only showcases my technical skills but also demonstrates my creativity in presenting traditional resume data in a modern, accessible format.",
     contentPosition: "r",
-    image:BellaBeautiesImg,
+    image:EllipseImg,
     imageAlt:"API Resume",
   },
   {
     id: 2,
-    callout: "Find people",
-    title: "They're all here",
+    callout: "SquareUp.com API, Next.js, TypeScript",
+    title: "Esthetician Site with API Integration",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto quaerat qui, illo incidunt suscipit fugiat distinctio officia earum eius quae officiis quis harum animi.",
+      "I crafted an online presence for an esthetician business using Next.js and TypeScript, delivering a seamless user experience and robust functionality. By integrating the Square Up API, I enabled customers to effortlessly schedule appointments directly on the website. Collaborating closely with the client, I meticulously curated their service offerings and product catalog within Square Up, ensuring accurate pricing, detailed descriptions, and precise service durations for smooth appointment bookings. Moreover, I extended their online reach by integrating the Square Up solution across their social media platforms. This project not only showcases my technical expertise in web development but also demonstrates my ability to enhance business operations through effective digital solutions.",
     contentPosition: "l",
-    image:EllipseImg,
-    imageAlt:"testEllipseOne",
+    image:BellaBeautiesImg,
+    imageAlt:"Esthetician",
   },
   {
     id: 3,
-    callout: "Have fun",
-    title: "Let's party",
+    callout: "AWS Stuff here",
+    title: "AWS Work",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto quaerat qui, illo incidunt suscipit fugiat distinctio officia earum eius quae officiis quis harum animi.",
     contentPosition: "r",
@@ -161,8 +161,8 @@ const features: FeatureType[] = [
   },
   {
     id: 4,
-    callout: "Get paid",
-    title: "Cha-ching!",
+    callout: "GoLang, C#, ....",
+    title: "Internal Applications",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto quaerat qui, illo incidunt suscipit fugiat distinctio officia earum eius quae officiis quis harum animi.",
     contentPosition: "l",

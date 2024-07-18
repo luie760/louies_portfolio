@@ -17,7 +17,6 @@ const PortfolioPage = (props: Props) => {
         <SwapColumnFeatures />
       </div>
     </section>
-    
   )
 }
 

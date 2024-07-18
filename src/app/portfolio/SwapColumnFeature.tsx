@@ -1,10 +1,10 @@
 import { motion, useInView } from "framer-motion";
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 import Image, { StaticImageData } from "next/image";
-import { FiDollarSign, FiEye, FiPlay, FiSearch } from "react-icons/fi";
 import BellaBeautiesImg from "../../../public/BellaBeautiesMain.png"
 import EllipseImg from "../../../public/Ellipse.png"
 import LogoImg from "../../../public/Logo.png"
+import GradientShadowButton from '../shared/GradientShadowButton';
 
 const SwapColumnFeatures = () => {
   const [featureInView, setFeatureInView] = useState<FeatureType>(features[0]);
@@ -94,6 +94,11 @@ const Content = ({
           </span>
           <p className="text-white my-3 text-5xl font-bold">{featureInView.title}</p>
           <p className="text-white">{featureInView.description}</p>
+          {featureInView.btnText != "" &&
+            <div className="py-4">
+            <GradientShadowButton btnText={featureInView.btnText} route={featureInView.path} />
+          </div>
+          }
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 25 }}
@@ -101,7 +106,7 @@ const Content = ({
           transition={{ duration: 0.5, ease: "easeInOut" }}
           className="mt-8 block md:hidden"
         >
-          <ExampleFeature featureInView={featureInView} />
+            <ExampleFeature featureInView={featureInView} />
         </motion.div>
       </div>
     </section>
@@ -111,7 +116,7 @@ const Content = ({
 const ExampleFeature = ({ featureInView }: { featureInView: FeatureType }) => {
   return (
     <div className="relative h-full w-full">
-      <Image className="" src={featureInView.image} alt={featureInView.imageAlt} />
+        <Image className="" src={featureInView.image} alt={featureInView.imageAlt} />
     </div>
   );
 };
@@ -126,6 +131,8 @@ type FeatureType = {
   contentPosition: "l" | "r";
   image: StaticImageData;
   imageAlt: string;
+  btnText: string;
+  path: string;
 };
 
 const features: FeatureType[] = [
@@ -138,6 +145,8 @@ const features: FeatureType[] = [
     contentPosition: "r",
     image:EllipseImg,
     imageAlt:"API Resume",
+    btnText: "Go to resume",
+    path: "/resumeapi",
   },
   {
     id: 2,
@@ -148,6 +157,8 @@ const features: FeatureType[] = [
     contentPosition: "l",
     image:BellaBeautiesImg,
     imageAlt:"Esthetician",
+    btnText: "",
+    path: "",
   },
   {
     id: 3,
@@ -158,6 +169,8 @@ const features: FeatureType[] = [
     contentPosition: "r",
     image:LogoImg,
     imageAlt:"testLogoOne",
+    btnText: "",
+    path: "",
   },
   {
     id: 4,
@@ -168,5 +181,7 @@ const features: FeatureType[] = [
     contentPosition: "l",
     image:EllipseImg,
     imageAlt:"testEllipseTwo",
+    btnText: "",
+    path: "",
   },
 ];

@@ -30,6 +30,9 @@ const cURL = (props: Props) => {
         <br />
         &#8226; <span className='font-bold'>No GUI:</span> Lacks a graphical interface, which can be less intuitive for some users.
       </p>
+      <br />
+
+      <h1 className="text-lg font-bold mb-6">Using cURL with the Resume API:</h1>
     </div>
   )
 }

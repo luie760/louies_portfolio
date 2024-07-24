@@ -29,7 +29,7 @@ const Form = ({
         selected === "company" ? "bg-indigo-600" : "bg-violet-600"
       }`}
     >
-      <h3 className="text-4xl font-bold mb-6">Contact us</h3>
+      <h3 className="text-4xl font-bold mb-6">Contact me</h3>
 
       {/* Name input */}
       <div className="mb-6">

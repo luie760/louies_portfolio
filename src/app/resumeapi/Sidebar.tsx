@@ -3,19 +3,17 @@ import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import "react-pro-sidebar/dist/css/styles.css";
 import { tokens } from "./theme";
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
-import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
-import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
-import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
-import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
-import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
-import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
-import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutlined";
-import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
+import InfoIcon from "@mui/icons-material/Info";
+import HttpIcon from "@mui/icons-material/Http";
+import TerminalIcon from "@mui/icons-material/Terminal";
+import MailIcon from "@mui/icons-material/Mail";
+import SchoolIcon from "@mui/icons-material/School";
+import WorkIcon from "@mui/icons-material/Work";
+import BuildIcon from "@mui/icons-material/Build";
+import CommentIcon from "@mui/icons-material/Comment";
+import AssignmentIcon from "@mui/icons-material/Assignment";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
-import Link from "next/link";
+import ApiIcon from "@mui/icons-material/Api";
 
 //Replication of sidebar from https://codesandbox.io/examples/package/react-pro-sidebar
 
@@ -112,7 +110,7 @@ const Sidebar = ({onSelect, mode}: SideBarProps) => {
               mode={mode}
               title="Introduction"
               to="Introduction"
-              icon={<HomeOutlinedIcon />}
+              icon={<InfoIcon />}
               selected={selected}
               onSelect={onSelect}
             />
@@ -122,13 +120,13 @@ const Sidebar = ({onSelect, mode}: SideBarProps) => {
               color={colors.grey[300]}
               sx={{ m: "15px 0 5px 20px" }}
             >
-              Getting Started
+              Start
             </Typography>
             <Item
               mode={mode}
               title="API Clients"
               to="APIClients"
-              icon={<PeopleOutlinedIcon />}
+              icon={<HttpIcon />}
               selected={selected}
               onSelect={onSelect}
             />
@@ -136,7 +134,7 @@ const Sidebar = ({onSelect, mode}: SideBarProps) => {
               mode={mode}
               title="cURL"
               to="cURL"
-              icon={<ContactsOutlinedIcon />}
+              icon={<TerminalIcon />}
               selected={selected}
               onSelect={onSelect}
             />
@@ -144,7 +142,7 @@ const Sidebar = ({onSelect, mode}: SideBarProps) => {
               mode={mode}
               title="Postman"
               to="Postman"
-              icon={<ReceiptOutlinedIcon />}
+              icon={<MailIcon />}
               selected={selected}
               onSelect={onSelect}
             />
@@ -154,29 +152,45 @@ const Sidebar = ({onSelect, mode}: SideBarProps) => {
               color={colors.grey[300]}
               sx={{ m: "15px 0 5px 20px" }}
             >
-              Pages
+              GET
             </Typography>
             <Item
               mode={mode}
-              title="Profile Form"
-              to="/form"
-              icon={<PersonOutlinedIcon />}
+              title="Endpoints"
+              to="Endpoints"
+              icon={<ApiIcon />}
               selected={selected}
               onSelect={onSelect}
             />
             <Item
               mode={mode}
-              title="Calendar"
-              to="/calendar"
-              icon={<CalendarTodayOutlinedIcon />}
+              title="Education"
+              to="Education"
+              icon={<SchoolIcon />}
               selected={selected}
               onSelect={onSelect}
             />
             <Item
               mode={mode}
-              title="FAQ Page"
-              to="/faq"
-              icon={<HelpOutlineOutlinedIcon />}
+              title="Experience"
+              to="Experience"
+              icon={<WorkIcon />}
+              selected={selected}
+              onSelect={onSelect}
+            />
+            <Item
+              mode={mode}
+              title="Skills"
+              to="Skills"
+              icon={<BuildIcon />}
+              selected={selected}
+              onSelect={onSelect}
+            />
+            <Item
+              mode={mode}
+              title="Projects"
+              to="Projects"
+              icon={<AssignmentIcon />}
               selected={selected}
               onSelect={onSelect}
             />
@@ -186,37 +200,13 @@ const Sidebar = ({onSelect, mode}: SideBarProps) => {
               color={colors.grey[300]}
               sx={{ m: "15px 0 5px 20px" }}
             >
-              Charts
+              POST
             </Typography>
             <Item
               mode={mode}
-              title="Bar Chart"
-              to="/bar"
-              icon={<BarChartOutlinedIcon />}
-              selected={selected}
-              onSelect={onSelect}
-            />
-            <Item
-              mode={mode}
-              title="Pie Chart"
-              to="/pie"
-              icon={<PieChartOutlineOutlinedIcon />}
-              selected={selected}
-              onSelect={onSelect}
-            />
-            <Item
-              mode={mode}
-              title="Line Chart"
-              to="/line"
-              icon={<TimelineOutlinedIcon />}
-              selected={selected}
-              onSelect={onSelect}
-            />
-            <Item
-              mode={mode}
-              title="Geography Chart"
-              to="/geography"
-              icon={<MapOutlinedIcon />}
+              title="Comment"
+              to="Comment"
+              icon={<CommentIcon />}
               selected={selected}
               onSelect={onSelect}
             />

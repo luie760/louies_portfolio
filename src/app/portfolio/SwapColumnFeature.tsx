@@ -4,6 +4,7 @@ import Image, { StaticImageData } from "next/image";
 import BellaBeautiesImg from "../../../public/BellaBeautiesMain.png"
 import EllipseImg from "../../../public/Ellipse.png"
 import LogoImg from "../../../public/Logo.png"
+import ResumeApiImg from "../../../public/ResumeApi.jpg"
 import GradientShadowButton from '../shared/GradientShadowButton';
 
 const SwapColumnFeatures = () => {
@@ -143,7 +144,7 @@ const features: FeatureType[] = [
     description:
       "Experience my portfolio in a unique way through a custom-built Resume API. Leveraging Supabase, PostgreSQL, and Next.js, I've transformed static resume content into a dynamic API endpoint. Now, accessing detailed information about my skills, projects, and experience is as simple as sending a GET request. Explore and interact with my professional journey effortlessly, whether you're browsing through a browser or testing endpoints with tools like Postman. This project not only showcases my technical skills but also demonstrates my creativity in presenting traditional resume data in a modern, accessible format.",
     contentPosition: "r",
-    image:EllipseImg,
+    image:ResumeApiImg,
     imageAlt:"API Resume",
     btnText: "Go to resume",
     path: "/resumeapi",

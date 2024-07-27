@@ -47,7 +47,7 @@ const InitialText = () => {
         ------------------------------------------------------------------------
       </p>
       <br />
-      <p>To get started click on one of the categories to the left on the sidebar under 'Getting Started'
+      <p>To get started click on one of the categories to the left on the sidebar under 'Start'
         where you can learn how to interact with the various endpoints that make up my resume API.</p>
     </>
   );

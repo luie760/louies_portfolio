@@ -156,8 +156,8 @@ const Sidebar = ({onSelect, mode}: SideBarProps) => {
             </Typography>
             <Item
               mode={mode}
-              title="Endpoints"
-              to="Endpoints"
+              title="Name & Contact"
+              to="NameContact"
               icon={<ApiIcon />}
               selected={selected}
               onSelect={onSelect}

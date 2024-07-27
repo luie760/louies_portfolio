@@ -6,7 +6,7 @@ import Postman from './postman'
 import GetEducation from './geteducation'
 import GetExperience from './getexperience'
 import GetSkills from './getskills'
-import GetEndpoints from './getendpoints'
+import GetNameContact from './getnamecontact'
 import GetProjects from './getprojects'
 import PostComment from './postcomment'
 
@@ -23,8 +23,8 @@ const ConditionalResumeSection = ({category}: Props) => {
          return (<CURL />)
       } else if (category === "Postman"){
          return (<Postman />)
-      } else if (category === "Endpoints"){
-         return (<GetEndpoints />)
+      } else if (category === "NameContact"){
+         return (<GetNameContact />)
       } else if (category === "Education"){
          return (<GetEducation />)
       } else if (category === "Experience"){

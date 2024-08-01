@@ -6,6 +6,6 @@ export async function GET() {
     const cookieStore = cookies();
     const supabase = createRouteHandlerClient({ cookies: () => cookieStore });
 
-    const {data, error} = await supabase.from("resume").select("*");
+    const {data, error} = await supabase.from("education").select("*");
     return NextResponse.json(data);
 }

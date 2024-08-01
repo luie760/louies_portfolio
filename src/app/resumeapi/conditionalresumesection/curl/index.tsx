@@ -1,4 +1,5 @@
 import React from 'react'
+import { CopyBlock, dracula } from "react-code-blocks";
 
 type Props = {}
 
@@ -33,6 +34,46 @@ const cURL = (props: Props) => {
       <br />
 
       <h1 className="text-lg font-bold mb-6">Using cURL with the Resume API:</h1>
+      <p>
+        If cURL is your method of choice to interact with my resume API, first ensure that cURL is installed on your machine. In a command line tool of your choice, run 
+        the following command.
+      </p>
+
+      <div className='w-96 py-5'>
+        <CopyBlock
+          language="bash"
+          text={`curl --version`}
+          showLineNumbers={false}
+          theme={dracula}
+          codeBlock
+        />
+      </div>
+      <br />
+
+      <p>
+        If cURL is installed you should see version information print to the console. If it is not, an error referring to the cURL command not being found will be displayed. 
+        You can easily install cURL using a package manager for your distribution. Installing cURL is beyond the scope of this documentation. Please seek a walk through on 
+        how to install cURL on the internet if you would like to use cURL to access my resume api and return when cURL is installed.  
+      </p>
+      <br />
+      <p>
+        Once you have verified that cURL is installed, run the following command to return my resume api Name and Contact information. 
+      </p>
+
+      <div className='w-96 py-5'>
+        <CopyBlock
+          language="bash"
+          text={`curl http://localhost:3000/api/resume`}
+          showLineNumbers={false}
+          theme={dracula}
+          codeBlock
+        />
+      </div>
+
+      <p>
+        The above cURL command is an example of how to interact with my resume api using cURL. 
+        See the other available endpoints in the navigation to the left to learn how to interact with the rest of my resume api.
+      </p>
     </div>
   )
 }

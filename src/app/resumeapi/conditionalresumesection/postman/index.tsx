@@ -1,4 +1,5 @@
 import React from 'react'
+import { CopyBlock, dracula } from "react-code-blocks";
 
 type Props = {}
 
@@ -36,6 +37,30 @@ const Postman = (props: Props) => {
       <br />
 
       <h1 className="text-lg font-bold mb-6">Using Postman with the Resume API:</h1>
+      <p>
+        If Postman is your method of choice to interact with my resume API, first ensure that Postman is installed on your machine. You will need to work in a workspace 
+        or create a new workspace and navigate to make a http request where you can select to make a GET or POST request depending on which endpoint you want to interact 
+        with in my resume api. 
+      </p>
+      <br />
+      <p>
+        For example, in Postman, select GET and enter the following content in the body as the request URL and select SEND 
+        to return my resume api Name and Contact information. 
+      </p>
+
+      <div className='w-96 py-5'>
+        <CopyBlock
+          language="bash"
+          text={`http://localhost:3000/api/resume`}
+          showLineNumbers={false}
+          theme={dracula}
+          codeBlock
+        />
+      </div>
+
+      <p>
+        See the other available endpoints in the navigation to the left to learn how to interact with the rest of my resume api.
+      </p>
     </div>
   )
 }
